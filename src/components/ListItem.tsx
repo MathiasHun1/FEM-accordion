@@ -28,6 +28,7 @@ const ListItem = ({ titleText, bodyText }: Props) => {
         <p className="font-semibold text-lg">{titleText}</p>
         <button onClick={() => setOpened(!opened)} className="rounded-full">
           <img className="cursor-pointer" src={opened ? minus : plus} alt="" />
+          <span className="sr-only">Open</span>
         </button>
       </div>
       <motion.p
